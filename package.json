@@ -1,5 +1,5 @@
 {
-  "name": "lib",
+  "name": "ecap-lib",
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -10,19 +10,20 @@
     "lint": "biome check .",
     "format": "biome format --write .",
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "localy:publish": "yarn build && yarn unlink && yarn link"
   },
   "keywords": ["typescript", "library"],
   "author": "Colin ECAP",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/my-ts-library"
+    "url": "https://github.com/ecaporg/ecap-lib"
   },
   "bugs": {
-    "url": "https://github.com/your-username/my-ts-library/issues"
+    "url": "https://github.com/ecaporg/ecap-lib/issues"
   },
-  "homepage": "https://github.com/your-username/my-ts-library#readme",
+  "homepage": "https://github.com/ecaporg/ecap-lib#readme",
   "devDependencies": {
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
