@@ -1,9 +1,9 @@
 export enum RolesEnum {
-  ADMIN = "ADMIN",
-  DIRECTOR = "DIRECTOR",
-  TEACHER = "TEACHER",
-  STUDENT = "STUDENT",
-  SUPER_ADMIN = "SUPER_ADMIN",
+  ADMIN = 'ADMIN',
+  DIRECTOR = 'DIRECTOR',
+  TEACHER = 'TEACHER',
+  STUDENT = 'STUDENT',
+  SUPER_ADMIN = 'SUPER_ADMIN',
 }
 
 export const ROLES = [
@@ -14,10 +14,10 @@ export const ROLES = [
   RolesEnum.STUDENT,
 ] as const;
 
-export const MAP_TO_STRING: Record<(typeof ROLES)[number], string> = {
-  TEACHER: "Teacher",
-  DIRECTOR: "Director",
-  ADMIN: "Admin",
-  SUPER_ADMIN: "Super Admin",
-  STUDENT: "Student",
+export const MAP_TO_STRING: Record<RolesEnum, string> = {
+  TEACHER: 'Teacher',
+  DIRECTOR: 'Director',
+  ADMIN: 'Admin',
+  SUPER_ADMIN: 'Super Admin',
+  STUDENT: 'Student',
 };
