@@ -1,0 +1,31 @@
+{
+  "name": "lib",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "keywords": ["typescript", "library"],
+  "author": "Colin ECAP",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/my-ts-library"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/my-ts-library/issues"
+  },
+  "homepage": "https://github.com/your-username/my-ts-library#readme",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "@biomejs/biome": "^1.9.4"
+  }
+}
