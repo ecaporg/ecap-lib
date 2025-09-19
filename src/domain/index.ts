@@ -18,3 +18,5 @@ export * from "./track-calendar";
 export * from "./track-learning-period";
 export * from "./track";
 export * from "./user";
+
+export type ITeacherCompliance = any;
