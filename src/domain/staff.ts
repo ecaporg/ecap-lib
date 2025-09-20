@@ -1,6 +1,6 @@
 ﻿import { IDatedGeneric } from "../types";
 import { IAcademy } from "./academy";
-import { ITeacherSchoolYearEnrollment } from "./teacher-enrollment";
+import { ITeacherEnrollment } from "./teacher-enrollment";
 import { ITenant } from "./tenant";
 import { IUser } from "./user";
 
@@ -10,7 +10,7 @@ export interface IStaff extends IDatedGeneric {
 }
 
 export interface ITeacher extends IStaff {
-  teacher_school_year_enrollments: ITeacherSchoolYearEnrollment[];
+  teacher_enrollments: ITeacherEnrollment[];
 }
 
 export interface IAdmin extends IStaff {
