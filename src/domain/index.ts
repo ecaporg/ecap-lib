@@ -2,7 +2,6 @@ export * from "./academic-year";
 export * from "./academy";
 export * from "./assignment";
 export * from "./course";
-export * from "./error";
 export * from "./key";
 export * from "./sample-flag";
 export * from "./sample";

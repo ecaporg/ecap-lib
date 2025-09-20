@@ -11,6 +11,9 @@ export interface IStaff extends IDatedGeneric {
 
 export interface ITeacher extends IStaff {
   teacher_enrollments: ITeacherEnrollment[];
+
+  tenant: ITenant;
+  tenant_id: number;
 }
 
 export interface IAdmin extends IStaff {
@@ -21,4 +24,7 @@ export interface IAdmin extends IStaff {
 export interface IDirector extends IAdmin {
   academy: IAcademy;
   academy_id: number;
+
+  tenant: ITenant;
+  tenant_id: number;
 }
