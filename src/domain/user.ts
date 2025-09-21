@@ -1,9 +1,9 @@
 import type { RolesEnum } from "../constants";
-import type { IGeneric } from "../types";
+import type { IIDGeneric } from "../types";
 import type { IAdmin, IDirector, ITeacher } from "./staff";
 import type { IStudent } from "./student";
 
-export interface IUser extends IGeneric {
+export interface IUser extends IIDGeneric {
   name: string;
   email: string;
   password: string;

@@ -1,9 +1,9 @@
-﻿import { IGeneric } from "../types";
+﻿import { IIDGeneric } from "../types";
 import { IAcademicYear } from "./academic-year";
 import { ITeacher } from "./staff";
 import { IStudentLPEnrollment } from "./student-enrollment";
 
-export interface ITeacherEnrollment extends IGeneric {
+export interface ITeacherEnrollment extends IIDGeneric {
   teacher_id: number;
 
   academic_year: IAcademicYear;

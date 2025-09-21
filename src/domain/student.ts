@@ -1,10 +1,10 @@
-﻿import { IDatedGeneric } from "../types";
+﻿import { IIDGeneric } from "../types";
 import { IAcademy } from "./academy";
 import { ISchool } from "./school";
 import { IStudentLPEnrollment } from "./student-enrollment";
 import { IUser } from "./user";
 
-export interface IStudent extends IDatedGeneric {
+export interface IStudent extends IIDGeneric {
   id: number;
   user: IUser;
 

@@ -1,10 +1,10 @@
-﻿import { IGeneric } from "../types";
+﻿import { IIDGeneric } from "../types";
 import { IStudent } from "./student";
 import { IStudentLPEnrollmentAssignment } from "./student-enrollment-assignment";
 import { ITeacherEnrollment } from "./teacher-enrollment";
 import { ITrackLearningPeriod } from "./track-learning-period";
 
-export interface IStudentLPEnrollment extends IGeneric {
+export interface IStudentLPEnrollment extends IIDGeneric {
   completed: boolean;
   percentage: number;
   student_grade: string;

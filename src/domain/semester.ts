@@ -1,7 +1,7 @@
-﻿import { IGeneric } from "../types";
+﻿import { IIDGeneric } from "../types";
 import { ITrack } from "./track";
 
-export interface ISemester extends IGeneric {
+export interface ISemester extends IIDGeneric {
   start_date: Date;
   end_date: Date;
   name: string;

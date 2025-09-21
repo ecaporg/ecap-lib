@@ -1,6 +1,6 @@
 {
   "name": "ecap-lib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -13,7 +13,7 @@
     "format": "biome format --write .",
     "build": "tsup",
     "dev": "tsup --watch",
-    "localy:publish": "yarn build && yarn unlink && yarn link"
+    "local:publish": "yarn build && yarn unlink && yarn link"
   },
   "keywords": [
     "typescript",

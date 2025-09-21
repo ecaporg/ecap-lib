@@ -1,8 +1,8 @@
-﻿import { IGeneric } from "../types";
+﻿import { IIDGeneric } from "../types";
 import { IStudentLPEnrollment } from "./student-enrollment";
 import { ITrack } from "./track";
 
-export interface ITrackLearningPeriod extends IGeneric {
+export interface ITrackLearningPeriod extends IIDGeneric {
   start_date: Date;
   end_date: Date;
   name: string;

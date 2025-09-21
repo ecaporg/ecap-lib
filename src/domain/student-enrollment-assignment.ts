@@ -1,8 +1,11 @@
-﻿import { IAssignment } from "./assignment";
+﻿import { IIDGeneric } from "../types";
+import { IAssignment } from "./assignment";
 import { ISample } from "./sample";
 import { IStudentLPEnrollment } from "./student-enrollment";
 
-export interface IStudentLPEnrollmentAssignment {
+export interface IStudentLPEnrollmentAssignment extends IIDGeneric<string> {
+  id: string;
+
   assignment: IAssignment;
   assignment_id: number;
 

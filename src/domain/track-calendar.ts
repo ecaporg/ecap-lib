@@ -1,4 +1,4 @@
-﻿import { IDatedGeneric } from "../types";
+﻿import { IIDGeneric } from "../types";
 import { ITrack } from "./track";
 
 export interface ICalendarDay {
@@ -6,7 +6,7 @@ export interface ICalendarDay {
   type: string;
 }
 
-export interface ITrackCalendar extends IDatedGeneric {
+export interface ITrackCalendar extends IIDGeneric {
   id: number;
   days: ICalendarDay[];
   track: ITrack;

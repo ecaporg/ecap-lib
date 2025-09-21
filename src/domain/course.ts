@@ -1,7 +1,7 @@
-﻿import { ICanvasGeneric } from "../types";
+﻿import { IIDCanvasGeneric } from "../types";
 import { IAssignment } from "./assignment";
 
-export interface ICourse extends ICanvasGeneric {
+export interface ICourse extends IIDCanvasGeneric {
   canvas_id?: string;
 
   name: string;
